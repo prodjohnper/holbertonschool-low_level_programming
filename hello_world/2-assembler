@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -c code.c
+gcc -S -c $CFILE
