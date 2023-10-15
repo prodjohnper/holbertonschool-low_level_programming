@@ -1,11 +1,8 @@
-#!/bin/bash
 #include <stdio.h>
 #include <unistd.h>
 /**
- *
  * main - Print the last part of the quote in the standard error.
  * Return: 1 if success.
- *
  */
 int main(void)
 {
