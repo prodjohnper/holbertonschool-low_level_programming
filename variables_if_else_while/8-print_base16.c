@@ -15,6 +15,9 @@ int main(void)
 	for (abc = 'a'; abc <= 'f'; abc++)
 	{
 		putchar(hex = '0');
+	}
+
+	{
 		putchar(abc);
 	}
 
