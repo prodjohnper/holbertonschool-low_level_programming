@@ -13,7 +13,7 @@ int main(void)
 
 	for (hex = 0; hex <= 10; hex++)
 	{
-		putchar(hex = '0');
+		putchar(hex + '0');
 	}
 
 	for (abc = 'a'; abc <= 'f'; abc++)
