@@ -18,7 +18,7 @@ int main(void)
 	/* your code goes there */
 
 	y = n % 10;
-	printf("Last digit of %d is %d \n", n, y);
+	printf("Last digit of %d is %d", n, y);
 
 	{
 
