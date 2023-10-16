@@ -9,8 +9,7 @@
 
 int main(void)
 {
-	int hex;
-	int abc
+	int hex, abc;
 
 	for (hex = 0; hex <= 10; hex++)
 	{
