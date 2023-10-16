@@ -11,9 +11,9 @@ int main(void)
 {
 	int hex;
 
-	for (hex = 0; hex < 16; hex++)
+	for (hex = 0; hex < 'F'; hex++)
 	{
-		putchar(hex + '16');
+		putchar(hex + 'F');
 	}
 
 	putchar('\n');
