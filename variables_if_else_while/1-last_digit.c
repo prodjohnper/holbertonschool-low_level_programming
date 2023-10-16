@@ -21,7 +21,6 @@ int main(void)
 	printf("Last digit of %d is %d \n", n, y);
 
 	{
-		printf("%d", n);
 
 	if (n > 0)
 	{
