@@ -12,11 +12,9 @@ int main(void)
 	int hex, abc;
 
 	for (hex = 0; hex <= 10; hex++)
-	{
-		putchar(hex + '0');
-	}
 	for (abc = 'a'; abc <= 'f'; abc++)
 	{
+		putchar(hex = '0');
 		putchar(abc);
 	}
 
