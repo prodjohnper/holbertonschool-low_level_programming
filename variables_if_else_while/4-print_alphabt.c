@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Print alphabet in lower case except q and e
+ * main - Print alphabet in lower case,
+ * except q and e.
  *
  * Return: Always 0.
  */
@@ -17,5 +18,6 @@ int main(void)
 	}
 
 	putchar('\n');
+
 	return (0);
 }
