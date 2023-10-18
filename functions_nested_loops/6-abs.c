@@ -4,7 +4,7 @@
  * _abs - Compute the absolute value
  * of an integer
  *
- * @n - variable
+ * @n: variable
  *
  * Return: Success 1, negative -1 otherwise 0.
  */
