@@ -4,7 +4,6 @@
  * times_table - Print the 9 times
  * table, starting with 0
  *
- * @i: variable
  *
  * Return: void
  */
@@ -18,7 +17,7 @@ void times_table(void)
 		_putchar('0');
 
 		for (ii = 1; ii <= 9; ii++)
-		{ 
+		{
 			_putchar(',');
 			_putchar(' ');
 			iii = i * ii;
