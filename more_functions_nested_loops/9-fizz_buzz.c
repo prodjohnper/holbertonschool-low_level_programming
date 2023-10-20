@@ -7,7 +7,7 @@
  * multiples of 5 print Buzz. For multiples
  * of both print FizzBuzz
  *
- * Retrun: Always 0.
+ * Return: Always 0.
  */
 
 int main(void)
