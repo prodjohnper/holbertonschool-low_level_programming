@@ -21,7 +21,7 @@ void print_diagonal(int n)
 			if (spc < d)
 		{
 			_putchar(32);
-		}	
+		}
 		{
 			_putchar(92);
 		}
