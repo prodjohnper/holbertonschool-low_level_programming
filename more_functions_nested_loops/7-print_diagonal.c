@@ -5,6 +5,7 @@
  * diagonal line
  *
  * @n: variable
+ *
  */
 
 void print_diagonal(int n)
