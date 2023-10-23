@@ -6,6 +6,8 @@
  * the value it points to 9
  *
  * @n: variable
+ *
+ * Return: Always 0.
  */
 
 void reset_to_98(int *n)
