@@ -22,7 +22,7 @@ char *_strpbrk(char *s, char *accept)
 	}
 	while (s[h] != '\0')
 	{
-		while(j <= i)
+		while (j <= i)
 		{
 			if (accept[j] == s[h])
 			{
