@@ -6,7 +6,7 @@
  *
  * @haystack: variable
  * @needle: variable
- * 
+ *
  * Return: return a pointer to the
  * beginning of the located substring,
  * or NULL if the substring is not found.
@@ -14,41 +14,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int j = 0, i = 0, h = 0, cutindex;
-	char *myNull = '\0';
+	int i;
 
-	while (needle[i] != '\0')
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
 	{
-		i++;
+		i = 0;
+
+		if (haystack[i] == needle[i])
+		{
+			do {
+				if (needle[i + 1] == '\0')
+					return (haystack);
+				i++;
+			} while (haystack[i] == needle[i]);
+		}
+		haystack++;
 	}
-	while (haystack[h] != '\0')
-	{
-		while (j <= i)
-		{
-		if (needle[j] == haystack[h])
-		{
-			cutindex = h;
-			while (needle[j] == haystack[h])
-			{
-				j++;
-				h++;
-				if (j == i && needle[j] == haystack[h])
-				{
-					return (haystack + cutindex);
-				}
-				else if (j == i)
-				{
-					return (myNull);
-				}
-			}
-		}
-		else
-		{
-			j = 0;
-			h++;
-		}
-		j = 0;
-		}
-	}
-	return (myNull);
+	return ('\0');
 }
