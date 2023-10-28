@@ -4,17 +4,16 @@
  * _puts_recursion - Prints a
  * string, followed by a new line.
  *
- * @s: variable
+ * @s: string
  */
 
 void _puts_recursion(char *s)
 {
-	int a;
-
-	for (a = 0; s[a] != '\0'; a++)
+	if (*s != '\0')
 	{
-		_putchar(s[a]);
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
-
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
