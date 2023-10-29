@@ -3,7 +3,6 @@
 /**
  * _sqrt_recursion - returns the
  * natural square root of a number
- * square - natural square root of a number
  *
  * @n: variable
  * @r: variable
@@ -18,6 +17,11 @@ int _sqrt_recursion(int n)
 {
 	return (square(0, n));
 }
+
+/**
+ * square - returns the square
+ * root of a number
+ */
 
 int square(int r, int n)
 {
