@@ -5,6 +5,7 @@
  * natural square root of a number
  *
  * @n: variable
+ * @r: variable
  *
  * Return: natural square root of a
  * number or -1 otherwise.
