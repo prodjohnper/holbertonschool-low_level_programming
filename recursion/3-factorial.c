@@ -5,6 +5,8 @@
  * factorial of a given number
  *
  * @n: variable
+ *
+ * Return: factorial given number
  */
 
 int factorial(int n)
