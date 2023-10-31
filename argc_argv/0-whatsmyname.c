@@ -6,7 +6,7 @@
  * line
  *
  * @argc: Argument count.
- * argv: Arguments.
+ * @argv: Arguments.
  *
  * Return: 0 Success.
  */
