@@ -47,7 +47,7 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	/* Return a pointer to the array */
-	for (x = 0; x < width; x++)
+	for (x = 0; x < height; x++)
 	{
 		for (y = 0; y < width; y++)
 		{
