@@ -17,14 +17,7 @@ char *str_concat(char *s1, char *s2)
 	int s1_len, s2_len, total_len;
 	char *result;
 
-	/* Give variables a value */
-	s1_len = strlen(s1);
-	s2_len = strlen(s2);
-	total_len = s1_len + s2_len;
-
-	result = malloc(total_len + 1);
-
-	/* Cases */
+	/* If statements for NULL */
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -34,6 +27,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+
+	/* Give variables a value */
+	s1_len = strlen(s1);
+	s2_len = strlen(s2);
+	total_len = s1_len + s2_len;
+
+	result = malloc(total_len + 1);
 
 	if (result == NULL)
 	{
