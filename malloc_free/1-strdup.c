@@ -10,7 +10,7 @@ newly allocated space in memory
 *@str: string to duplicate and point with malloc
 
 *Return: a pointer to the duplicated string, NULL
-if str = NULL or if insuficient memory was available
+if str is NULL or if insuficient memory was available
 */
 
 char *_strdup(char *str)
