@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stddef.h>
 
 /**
 * _strdup- Function that returns a pointer to a
@@ -15,19 +15,29 @@
 
 char *_strdup(char *str)
 {
-	unsigned int size = 1 + strlen(str);
-	char *ptr = (char *)malloc((size) * sizeof(char));
-	unsigned int i;
+	char *s;
+	int i, j;
 
-	if ((ptr == NULL) || (size == 0) || (str[0] == '\0'))
+	i = 0;
+	j = 0;
+
+	if (str == NULL)
 	{
 		return (NULL);
 	}
-
-	for (i = 0; i < size; i++)
+	while (str[i] != '\0')
 	{
-		ptr[i] = str[i];
+		i++;
 	}
+	s = malloc((i + 1) * sizeof(char));
 
-	return (ptr);
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+	for (j = 0; j < (i + 1); j++)
+	{
+		s[j] = str[j];
+	}
+	return (s);
 }
