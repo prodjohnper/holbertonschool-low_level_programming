@@ -16,18 +16,23 @@
 
 char *create_array(unsigned int size, char c)
 {
+	/* Create pointer variable */
 	char *ptr = (char *)malloc(size * sizeof(char));
 	unsigned int i;
 
+	/* Check if memory allocation was successful */
+	/* and checks if the size of array is zero */
 	if ((ptr == NULL) || (size == 0))
 	{
 		return (NULL);
 	}
 
+	/* Iterate and initialize each element of array with char C */
 	for (i = 0; i < size; i++)
 	{
 		ptr[i] = c;
 	}
 
+	/* Return pointer */
 	return (ptr);
 }
