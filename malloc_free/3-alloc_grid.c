@@ -40,12 +40,11 @@ int **alloc_grid(int width, int height)
 			for (x = 0; x >= 0; x--)
 			{
 				free(a[x]);
-			}
 
 			free(a);
 			return (NULL);
+			}
 		}
-	}
 	/* Return a pointer to the array */
 	for (x = 0; x < height; x++)
 	{
@@ -54,6 +53,6 @@ int **alloc_grid(int width, int height)
 			a[x][y] = 0;
 		}
 	}
-
+	}
 	return (a);
 }
