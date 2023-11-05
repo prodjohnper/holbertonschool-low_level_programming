@@ -35,16 +35,16 @@ int **alloc_grid(int width, int height)
 
 		if (a[x] == NULL)
 		{
-			/* Return NULL if the memory allocation failed
-			 * and frees previously allocated memory */
-			for (x = 0; x >= 0; x--)
+			/* Return NULL if the memory allocation failed */
+			/* and frees previously allocated memory */
+			for (y = 0; y < x; y++)
 			{
-				free(a[x]);
-
+				free(a[y]);
+			}
 			free(a);
 			return (NULL);
-			}
 		}
+	}
 	/* Return a pointer to the array */
 	for (x = 0; x < height; x++)
 	{
@@ -52,7 +52,6 @@ int **alloc_grid(int width, int height)
 		{
 			a[x][y] = 0;
 		}
-	}
 	}
 	return (a);
 }
