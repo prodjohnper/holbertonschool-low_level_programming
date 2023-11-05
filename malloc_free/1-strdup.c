@@ -15,29 +15,40 @@
 
 char *_strdup(char *str)
 {
+	/* Create values and assign them a value */
 	char *s;
 	int i, j;
 
 	i = 0;
 	j = 0;
 
+	/* Check if str is NULL */
 	if (str == NULL)
 	{
 		return (NULL);
 	}
+
+	/* Count the number of characters in input string */
 	while (str[i] != '\0')
 	{
 		i++;
 	}
+
+	/* Allocate memory */
 	s = malloc((i + 1) * sizeof(char));
 
+	/* Check if allocation was successful */
 	if (s == NULL)
 	{
 		return (NULL);
 	}
+
+	/* Copy characters from original string to newly allocated one */
 	for (j = 0; j < (i + 1); j++)
 	{
 		s[j] = str[j];
 	}
+
+	/* Return a pointer */
 	return (s);
 }
