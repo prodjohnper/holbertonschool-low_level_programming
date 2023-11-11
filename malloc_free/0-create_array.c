@@ -19,9 +19,9 @@ char *create_array(unsigned int size, char c)
 	/* Create pointer variable */
 	char *ptr = (char *)malloc(size * sizeof(char));
 	unsigned int i;
-
-	/* Check if memory allocation was successful */
-	/* and checks if the size of array is zero */
+	
+	/* Checks if the size of array is zero */
+	/* and checks if memory allocation was successful */
 	if ((ptr == NULL) || (size == 0))
 	{
 		return (NULL);
