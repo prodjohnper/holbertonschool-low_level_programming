@@ -26,7 +26,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		{
 			if (str_ptr != NULL)
 			{
-				print("%s%s", str_ptr, separator);
+				printf("%s%s", str_ptr, separator);
 			}
 
 			else
@@ -49,6 +49,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 
 		va_end(args);
-		printf("\n");
 	}
+	printf("\n");
 }
