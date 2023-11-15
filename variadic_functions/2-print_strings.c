@@ -5,6 +5,7 @@
  * prints strings, followed by a new line
  *
  * @n: the number of strings passed to the function
+ * @separator: string to be printed
  *
  * Return: (nil) if string is NULL
  */
