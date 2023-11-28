@@ -26,7 +26,7 @@ This is my submission to *Holberton Coding School's* module of *Singly Linked Li
 
 ## Struct
 
-This is the struct used in this module:
+This is the `struct` used in this module:
 ```c
 /**
  * struct list_s - singly linked list.
