@@ -4,6 +4,7 @@
 
 - [Description](#description)
 - [Files](#files)
+- [Struct](#struct)
 - [Resources](#resources)
 - [Credits](#credits)
 
@@ -22,6 +23,28 @@ This is my submission to *Holberton Coding School's* module of *Singly Linked Li
 - `4-free_list.c` - Function that frees a list.
 
 *`Main.c` files <ins>not</ins> included.*
+
+## Struct
+
+This is the struct used in this module:
+```c
+/**
+ * struct list_s - singly linked list.
+ *
+ * @str: string - malloc'ed string.
+ * @len: length of the string.
+ * @next: points to the next node.
+ *
+ * Description: singly linked list node structure.
+ */
+
+typedef struct list_s
+{
+    char *str;
+    unsigned int len;
+    struct list_s *next;
+} list_t;
+```
 
 ## Resources
 
