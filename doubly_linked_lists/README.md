@@ -42,6 +42,7 @@ This is the `struct` used in this module:
  * Description: doubly linked list node structure
  * 
  */
+
 typedef struct dlistint_s
 {
     int n;
