@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * ger_dnodeint_at_index - Function that 
+ * get_dnodeint_at_index - Function that
  * returns the nth node of a list.
  *
  * @head: pointer to nodes.
