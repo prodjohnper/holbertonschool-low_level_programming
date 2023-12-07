@@ -7,7 +7,7 @@
  * @ht: is the hash table you want to look into.
  * @key: is the key you're looking for.
  *
- * Returns: the value associated with the element, or
+ * Return: the value associated with the element, or
  * NULL if key couldn't be found.
  */
 
